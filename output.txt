@@ -1,0 +1,36 @@
+[yalamanchiliar@login-students practice]$ pwd
+/home/yalamanchiliar/practice
+[yalamanchiliar@login-students practice]$ ls -la
+total 8
+drwxr-xr-x. 2 yalamanchiliar majors 4096 Sep 24 13:01 .
+drwx------. 5 yalamanchiliar majors 4096 Sep 24 12:59 ..
+-rw-r--r--. 1 yalamanchiliar majors   29 Sep 24 13:00 notes.txt
+-rw-r--r--. 1 yalamanchiliar majors   29 Sep 24 13:01 renamed.txt
+[yalamanchiliar@login-students practice]$ mkdir practice
+[yalamanchiliar@login-students practice]$ cd practice
+[yalamanchiliar@login-students practice]$ touch notes.txt
+[yalamanchiliar@login-students practice]$ echo "line one" >> notes.txt
+[yalamanchiliar@login-students practice]$ echo "line two" >> notes.txt
+[yalamanchiliar@login-students practice]$ echo "line three" >> notes.txt
+[yalamanchiliar@login-students practice]$ cat notes.txt
+line one
+line two
+line three
+[yalamanchiliar@login-students practice]$ sort notes.txt
+line one
+line three
+line two
+[yalamanchiliar@login-students practice]$ nl notes.txt
+     1	line one
+     2	line two
+     3	line three
+[yalamanchiliar@login-students practice]$ cp notes.txt notes_copy.txt
+[yalamanchiliar@login-students practice]$ mv notes_copy.txt renamed.txt
+[yalamanchiliar@login-students practice]$ grep "two" notes.txt
+line two
+[yalamanchiliar@login-students practice]$ whoami
+yalamanchiliar
+[yalamanchiliar@login-students practice]$ ps
+    PID TTY          TIME CMD
+  66622 pts/32   00:00:00 bash
+  67781 pts/32   00:00:00 ps
